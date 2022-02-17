@@ -1,10 +1,10 @@
+region: frankfurt
 services:
 - type: pserv
   name: pgbouncer
   env: docker
   plan: standard
   repo: https://github.com/renderinc/docker-pgbouncer
-  region: frankfurt
   envVars:
   - key: DATABASE_URL
     sync: false
