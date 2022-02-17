@@ -4,6 +4,7 @@ services:
   env: docker
   plan: standard
   repo: https://github.com/renderinc/docker-pgbouncer
+  region: frankfurt
   envVars:
   - key: DATABASE_URL
     sync: false
@@ -12,7 +13,7 @@ services:
   - key: SERVER_RESET_QUERY
     value: DISCARD ALL
   - key: MAX_CLIENT_CONN
-    value: 500 
+    value: 800
   - key: DEFAULT_POOL_SIZE
     value: 50
 
