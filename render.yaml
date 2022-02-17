@@ -1,6 +1,6 @@
-region: frankfurt
 services:
-- type: pserv
+- type: web
+  region: frankfurt
   name: pgbouncer
   env: docker
   plan: standard
